@@ -1,0 +1,33 @@
+# Exclude node_modules to avoid copying local dependencies
+node_modules
+
+# Exclude npm debug logs
+npm-debug.log
+
+# Exclude Docker-specific files
+Dockerfile
+.dockerignore
+
+# Exclude Git directories and files
+.git
+.gitignore
+
+# Exclude markdown files
+*.md
+
+# Exclude log files
+*.log
+
+# Exclude TypeScript source files (if you compile them to JavaScript)
+# *.ts
+
+# Exclude Terraform files and directories
+terraform/
+*.tf
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Exclude build artifacts
+build/
+dist/
