@@ -1,25 +1,29 @@
-# Exclude node_modules to avoid copying local dependencies
+README.md
+serverless.yml
+Dockerfile
+
+# Node modules should not be included in the Docker build context
 node_modules
 
-# Exclude npm debug logs
-npm-debug.log
+# Log files
+*.log
 
-# Exclude Docker-specific files
-Dockerfile
-.dockerignore
+# Environment files
+.env
 
-# Exclude Git directories and files
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Git directory and files
 .git
 .gitignore
 
-# Exclude markdown files
-*.md
-
-# Exclude log files
-*.log
-
-# Exclude TypeScript source files (if you compile them to JavaScript)
-# *.ts
+# Docker-related files
+Dockerfile
+docker-compose.yml
+.serverless
+.dockerignore
 
 # Exclude Terraform files and directories
 terraform/
@@ -28,6 +32,3 @@ terraform/
 *.tfstate.*
 *.tfplan
 
-# Exclude build artifacts
-build/
-dist/
