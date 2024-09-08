@@ -18,7 +18,7 @@ provider:
 functions:
   app:
     image:
-      uri: 767397831825.dkr.ecr.ap-northeast-1.amazonaws.com/my-node-app:latest
+      uri: imageurl.ecr
     events:
       - http:
           path: /api/users
