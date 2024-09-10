@@ -130,5 +130,6 @@ dist
 .pnp.*
 .terraform
 .terraform.lock.hcl
+terraform.tfvars
 
 .serverless

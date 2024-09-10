@@ -3,6 +3,7 @@ import * as userService from '../services/userService';
 import { User } from '../models/userModel';
 
 export const createUser = async (req: Request, res: Response) => {
+
   try {
     const user: User = req.body;
     await userService.createUser(user);

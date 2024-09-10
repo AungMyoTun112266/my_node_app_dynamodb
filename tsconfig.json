@@ -7,7 +7,9 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,          // Enable experimental decorators
+    "emitDecoratorMetadata": true            // Enable emitting metadata for decorators
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
